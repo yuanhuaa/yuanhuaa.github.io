@@ -195,14 +195,14 @@ body::before {
   background-repeat: no-repeat;
   animation-name: bgFadeIn;
   animation-duration: 2s;
-  opacity: 1;
+  opacity: 0.8;
 }
 @-moz-keyframes bgFadeIn {
   from {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 @-webkit-keyframes bgFadeIn {
@@ -210,7 +210,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 @-o-keyframes bgFadeIn {
@@ -218,7 +218,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 @keyframes bgFadeIn {
@@ -226,7 +226,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 :root {
@@ -1169,7 +1169,7 @@ body::before {
   transition-property: all;
   transition-duration: 0.3s;
   transition-delay: 0s;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.8);
   box-shadow: 0 0 10px rgba(255,255,255,0.1);
 /* tag 容器 */
 }
@@ -1300,7 +1300,7 @@ body::before {
   background: rgba(0,120,231,0.3);
 }
 .post-collapse .collection-title .archive-year {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
   color: #0078e7;
   margin: 0 1.5rem;
 }
@@ -1364,7 +1364,7 @@ body::before {
   margin-right: 0.3rem;
 }
 .post-collapse .post-header .post-meta {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
   font-size: 1rem;
   margin: 1rem 0 1rem 1.2rem;
   white-space: nowrap;
@@ -1442,7 +1442,7 @@ body::before {
 }
 .markdown-body code,
 .markdown-body pre {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
 }
 .markdown-body blockquote {
   padding: 0.6rem 1rem;
@@ -1683,13 +1683,10 @@ body::before {
   color: #db2828;
 }
 .post-toc ol .toc-number {
-  font-family: 'Source Code Pro', Consolas, Monaco, SFMono-Regular, 'Ubuntu Mono', Menlo, monospace;
+  font-family: 'Source Code Pro', 'Courier New', Courier, Consolas, Monaco, monospace;
 }
 .post-toc ol .toc-child {
   font-size: 1rem;
-  overflow: hidden;
-  transition: max-height 0.6s ease-in;
-  max-height: 0;
 }
 .post-toc ol .toc-item.active>.toc-link {
   color: #f2711c;
@@ -1746,10 +1743,10 @@ body::before {
   left: 0;
   width: 20rem;
   background-color: #fff;
-  background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn@master/img/bg/alpha-stars-timing-1.webp");
+  background-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom 1rem center;
+  background-position: bottom 3rem center;
   text-align: center;
   z-index: 10;
   transition-property: all;
@@ -1850,6 +1847,17 @@ body::before {
   margin-bottom: 1rem;
   line-height: 1.5;
 }
+.site-author-status {
+  position: absolute;
+  height: 1.8rem;
+  width: 1.8rem;
+  bottom: 0;
+  right: 0;
+  line-height: 1.8rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  background-color: #fff;
+}
 .site-name {
   color: var(--hty-text-color);
   font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
@@ -1935,6 +1943,100 @@ body::before {
 .progress-circle-container {
   position: absolute;
 }
+#local-search-input {
+  outline: none;
+}
+#local-search-result {
+  overflow: auto;
+  margin: 0;
+  padding: 0.5rem 0 1rem 0;
+  height: calc(100% - 160px);
+}
+#local-search-result ul.search-result-list {
+  margin: 0;
+  padding: 0;
+}
+#local-search-result ul.search-result-list li {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0;
+}
+#local-search-result ul.search-result-list li .search-result-title {
+  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+#local-search-result ul.search-result-list li .search-result {
+  margin: 0;
+  font-size: 0.8rem;
+}
+#local-search-result ul.search-result-list li .search-result .search-keyword {
+  color: #f00;
+  font-style: normal;
+  text-decoration: underline;
+}
+.search-popup {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 4.5rem;
+  margin: 0;
+  opacity: 0;
+  z-index: 30;
+  transition: 0.6s;
+  visibility: hidden;
+}
+.search-popup.show {
+  visibility: visible;
+  opacity: 1;
+}
+.search-header .close-icon {
+  position: fixed;
+  top: 0.6rem;
+  right: 0.8rem;
+}
+.search-input {
+  background: transparent;
+  color: var(--hty-text-color);
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 800px;
+  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-weight: 900;
+  text-align: center;
+}
+.popup .search-icon,
+.popup .close-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+.popup .search-icon .icon,
+.popup .close-icon .icon {
+  width: 2rem;
+  height: 2rem;
+}
+#search {
+  position: fixed;
+  top: 0.6rem;
+  right: 0.8rem;
+}
+#search .icon {
+  color: #0078e7;
+}
 #comment {
   margin: 0 1rem;
   padding: 1rem;
@@ -1977,6 +2079,25 @@ body::before {
 #say #say-from {
   display: block;
 }
+.notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 1px solid #000;
+  max-width: calc(900px - 2rem);
+  background-color: rgba(255,255,255,0.3);
+}
+@media screen and (max-width: 768px) {
+  .notice {
+    border-left-width: 0px;
+    border-right-width: 0px;
+  }
+}
 .hidden {
   display: none;
 }
@@ -2018,7 +2139,7 @@ body::before {
   }
   :root:not([data-user-color-scheme]) .post-card {
     color: #fff;
-    background-color: rgba(27,31,46,0.9);
+    background-color: rgba(27,31,46,0.8);
     box-shadow: 0 1px 8px rgba(27,31,46,0.1);
   }
   :root:not([data-user-color-scheme]) .post-block {
@@ -2094,7 +2215,7 @@ body::before {
 }
 [data-user-color-scheme='dark'] .post-card {
   color: #fff;
-  background-color: rgba(27,31,46,0.9);
+  background-color: rgba(27,31,46,0.8);
   box-shadow: 0 1px 8px rgba(27,31,46,0.1);
 }
 [data-user-color-scheme='dark'] .post-block {
@@ -2139,4 +2260,163 @@ body::before {
   display: none;
   padding: 1rem;
   border: 1px solid #d3d3d3;
+}
+.album-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.album-list-item {
+  display: inline-flex;
+}
+.album-list-item figure {
+  position: relative;
+  width: 15rem;
+  margin: 2rem;
+}
+.album-list-item figure::before {
+  content: '';
+  position: absolute;
+  top: 1%;
+  left: 0.5%;
+  width: 100%;
+  height: 96%;
+  border: 0.25rem solid #fff;
+  background-color: #666;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  transform: rotate(-3deg);
+}
+.album-list-item figure img {
+  vertical-align: bottom;
+  display: inline-flex;
+  border: 0.25rem solid #fff;
+  box-shadow: 0 8px 10px rgba(0,0,0,0.3);
+  padding: 0;
+  transform: rotate(2deg);
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  background-color: #eee;
+}
+.album-list-item figure figcaption {
+  position: absolute;
+  bottom: -2.5rem;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.photo-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.photo-list-item {
+  display: inline-flex;
+  position: relative;
+  width: 15rem;
+  margin: 1.5rem;
+  cursor: url("$cursor-pointer"), pointer;
+}
+.photo-list-item img {
+  box-sizing: border-box;
+  vertical-align: bottom;
+  display: inline-flex;
+  border: 0.25rem solid #fff;
+  box-shadow: 0 8px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  background-color: #eee;
+}
+.photo-list-item figcaption {
+  position: absolute;
+  bottom: -1.8rem;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+}
+#decryptContainer {
+  display: flex;
+  height: 10rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#decrypt-password {
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 800px;
+  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-weight: 900;
+  text-align: center;
+}
+#decryptButton {
+  color: #0078e7;
+  background-color: rgba(0,120,231,0.08);
+}
+#decryptButton:active {
+  background-color: rgba(0,120,231,0.3);
+}
+#decryptButton .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#girls {
+  text-align: center;
+}
+.girls-number {
+  color: #fff;
+}
+.girl-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.girl-item {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  width: 8rem;
+  margin: 1rem;
+}
+.girl-item .girl-info {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.girl-item .girl-avatar {
+  object-fit: cover;
+  object-position: center top;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.12);
+  transition: 0.5s;
+}
+.girl-item .girl-avatar:hover {
+  box-shadow: 0 0 2rem rgba(0,0,0,0.12);
+}
+.girl-item .girl-name {
+  font-size: 0.9rem;
+}
+.girl-item .girl-from {
+  font-size: 12px;
+  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
+  font-weight: bold;
+  color: var(--hty-secondary-text-color);
+}
+.girl-item .girl-from::before {
+  content: '「';
+}
+.girl-item .girl-from::after {
+  content: '」';
 }
