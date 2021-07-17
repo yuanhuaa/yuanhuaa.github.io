@@ -7,8 +7,8 @@ avatar:
   mickey_mouse: false
   status:
     enable: true
-    emoji: 😭
-    message: 失恋中
+    emoji: 😒
+    message: 一般般
 
   #avatar:
   url: https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/头像.2hoy24eelha0.jpg # 你的头像图片地址
@@ -207,7 +207,7 @@ post_card:
   opacity: 0.8
 
 #代码高亮
-codeblock: #开启一键复制按钮
+codeblock:
   copy_btn: true
   prismjs:
     light: default #代码高亮主题
@@ -299,21 +299,69 @@ pages:
     url: /links/
     icon: icon-genderless-line
     color: dodgerblue
-  - name: 我爱的女孩
-    url: /girls/
-    icon: icon-women-line
-    color: deeppink
-  - name: 相册集
-    url: /albums/
-    icon: icon-gallery-line
+  # - name: 我爱的女孩
+  #   url: /girls/
+  #   icon: icon-women-line
+  #  color: deeppink
+  # - name: 相册集
+  #  url: /albums/
+  #  icon: icon-gallery-line
 
 #我的相册
 albums:
-  enable: true
+  enable: false
   icon: icon-gallery-line
   src: /js/gallery-decrypt.js
 
 #记录喜欢的女孩子
 girls:
-  enable: true
+  enable: false
   icon: icon-women-line
+
+comment:
+  enable: true
+  #tips:
+  #  - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+  # - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  #candidates:
+  #  - valine
+  #  - utterances
+
+#busuanzi:
+#  enable: true
+#  site_uv: true
+#  site_uv_icon: icon-user-line
+#  site_pv: true
+#  site_pv_icon: icon-eye-line
+#  page_pv: true
+#  page_pv_icon: icon-eye-line
+
+wordcount:
+  enable: true
+  count: true
+  time: true
+
+valine:
+  enable: true
+  appId: Npll1CG6oNlmNdc63HSUwPip-gzGzoHsz # your leancloud application appid
+  appKey: IaKS8Ge04snYTj714KRsgdSf # your leancloud application appkey
+  placeholder: 有什么想对我说的吗？ # comment box placeholder
+  avatar: https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/头像.2hoy24eelha0.jpg# gravatar style
+  meta:
+    - nick
+    - mail
+    - link
+  pageSize: 10 # pagination size
+  lang: zh-CN
+  visitor: false
+  highlight: true
+  recordIP: false
+  serverURLs:
+  Emoji See: https://valine.js.org/emoji.html
+  emojiCDN: //i0.hdslb.com/bfs/emote/
+  emojiMaps:
+    tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
+    enableQQ: false
+  requiredFields:
+    - nick
+    - mail
