@@ -4,11 +4,51 @@
   
     
     <entry>
+      <title>Vscode配置Python运行环境</title>
+      <link href="/2021/07/16/Vscode%E9%85%8D%E7%BD%AEPython%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83/"/>
+      <url>/2021/07/16/Vscode%E9%85%8D%E7%BD%AEPython%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>VScode是一个相当优秀的IDE，具备开源、跨平台、模块化、插件丰富、启动时间快、颜值高、可高度定制等等优秀的特质，不愧是微软爸爸的私生子。<br>Vscode虽然是一个文本编辑器，但是在安装不同的插件后，就可以有相当多的工程。<br>所以用VScode来编写Python，也是相当的好用的。<br>所以，今天我们就来讲讲，怎么在VScode上配置Python开发环境。</p><h1 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h1><p>首先，我们必须先下载好Python的安装包和VScode的安装包。<br>下载地址如下：<br><a href="https://www.python.org/downloads/">Python下载</a><br><a href="https://code.visualstudio.com/">VScode下载</a><br>大家选择适合自己的版本下载即可。</p><p>本文中所用的系统是win11预览版，选择版本为python3.9.6.</p><h1 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h1><h2 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h2><p>在安装过程中切记勾选添加环境变量</p><h3 id="安装第三方的包"><a href="#安装第三方的包" class="headerlink" title="安装第三方的包"></a>安装第三方的包</h3><pre><code>python #检查python版本import this #欣赏python之禅exit() #退出pip list #检查第三方的包pip install --user flake8 #下载安装flake8pip install --user yapf #下载安装yapf</code></pre><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/%E6%A3%80%E6%9F%A5%E9%85%8D%E7%BD%AE%E7%9A%84Python.70att70nipg0.png" alt="检查配置的Python" loading="lazy"></p><h2 id="安装Vscode"><a href="#安装Vscode" class="headerlink" title="安装Vscode"></a>安装Vscode</h2><p>从官网上下载好安装包后，一路NEXT就好了。<br>（所以我本章到底要讲啥呢，水了这么几个步骤，主要还是下面最关键咯）</p><h1 id="配置Vscode"><a href="#配置Vscode" class="headerlink" title="配置Vscode"></a>配置Vscode</h1><h2 id="安装python插件"><a href="#安装python插件" class="headerlink" title="安装python插件"></a>安装python插件</h2><ul><li>1.打开Vscode，按快捷键<code>Ctrl+Shift+X</code>，进入插件管理页面。</li><li>2.在搜索栏中输入python</li><li>3.选择插件，点击安装。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/Vscode%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6python.5y6xg4nirv40.png" alt="Vscode安装插件python" loading="lazy"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>基本上Vscode安装Python步骤到此就结束了，下一更开始将会开始Python语言的基础学习。</p><p>什么？你说我这篇博客啥都没写？的确啊，我就是在水，略略略🤷‍♂️</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 安装 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>爱情公寓5</title>
+      <link href="/2021/07/12/%E7%88%B1%E6%83%85%E5%85%AC%E5%AF%935/"/>
+      <url>/2021/07/12/%E7%88%B1%E6%83%85%E5%85%AC%E5%AF%935/</url>
+      
+        <content type="html"><![CDATA[<p>爱情公寓5 弟20集，真的破防了🥲<br>影响大众想象力的，并不是事实本身，而是它扩散和传播的方式。   ——古斯塔夫。勒庞《乌合之众》</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>字节跳动二面凉经</title>
       <link href="/2021/07/04/%E4%BA%8C%E9%9D%A2%E5%87%89%E7%BB%8F/"/>
       <url>/2021/07/04/%E4%BA%8C%E9%9D%A2%E5%87%89%E7%BB%8F/</url>
       
-        <content type="html"><![CDATA[<p>这里是摘要</p><span id="more"></span><p>这里是更多内容</p><h1 id="心脏与字节只能有一个跳动"><a href="#心脏与字节只能有一个跳动" class="headerlink" title="心脏与字节只能有一个跳动"></a>心脏与字节只能有一个跳动</h1><h2 id="纪念去字节面试的机会"><a href="#纪念去字节面试的机会" class="headerlink" title="纪念去字节面试的机会"></a>纪念去字节面试的机会</h2><h3 id="图片标注"><a href="#图片标注" class="headerlink" title="图片标注"></a>图片标注</h3><p><img src="https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png" alt="Audits - Lighthouse" loading="lazy"><em>谷歌浏览器 Audits - Lighthouse 检测分数</em></p>]]></content>
+        <content type="html"><![CDATA[<p>我也未曾设想能通过字节跳动的一面 </p><span id="more"></span><p>我原本向想要详细把二面的所有问题全部罗列出来，但最近因为许多事情并没有及时的更新，现在在回忆各种细节已是模糊了许多，因此打算对二面进行简略总结。</p><h1 id=""><a href="#" class="headerlink" title=""></a></h1><h1 id="心脏与字节只能有一个跳动"><a href="#心脏与字节只能有一个跳动" class="headerlink" title="心脏与字节只能有一个跳动"></a>心脏与字节只能有一个跳动</h1><h2 id="纪念去字节面试的机会"><a href="#纪念去字节面试的机会" class="headerlink" title="纪念去字节面试的机会"></a>纪念去字节面试的机会</h2><h3 id="图片标注"><a href="#图片标注" class="headerlink" title="图片标注"></a>图片标注</h3><p><img src="https://i.loli.net/2020/03/08/DhfLu5yngb7NZE2.png" alt="Audits - Lighthouse" loading="lazy"><em>谷歌浏览器 Audits - Lighthouse 检测分数</em> </p>]]></content>
       
       
       <categories>
