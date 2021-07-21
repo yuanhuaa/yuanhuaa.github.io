@@ -4,11 +4,104 @@
   
     
     <entry>
+      <title>《双姝》第六集</title>
+      <link href="/2021/07/18/%E3%80%8A%E5%8F%8C%E5%A7%9D%E3%80%8B%E7%AC%AC%E5%85%AD%E9%9B%86/"/>
+      <url>/2021/07/18/%E3%80%8A%E5%8F%8C%E5%A7%9D%E3%80%8B%E7%AC%AC%E5%85%AD%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<table><thead><tr><th>中文</th><th align="center">英文</th></tr></thead><tbody><tr><td>我很难说真话</td><td align="center">I have real trouble telling the truth</td></tr><tr><td>实际上 我没有这个概念 但是…</td><td align="center">I don’t understand the concept,actually,but…</td></tr><tr><td>有人告诉我这很重要 所以…</td><td align="center">But somebody told me it was important,so…</td></tr><tr><td>就说吧</td><td align="center">Here goes.</td></tr><tr><td>大部分时间…</td><td align="center">Most of the time…</td></tr><tr><td>大多数日子 我…</td><td align="center">Most days,I feel…</td></tr><tr><td>毫无感觉</td><td align="center">Nothing.</td></tr><tr><td>我没有任何感觉</td><td align="center">I don’t feel anything.</td></tr><tr><td>太无聊了</td><td align="center">It is so boring.</td></tr><tr><td>我醒来就像”又这样 真的吗</td><td align="center">I wake up and I think,”again?Really?</td></tr><tr><td>“我还得再来一次”</td><td align="center">“I have to do this again?”</td></tr><tr><td>我真的无法理解</td><td align="center">And what I really don’t understand is,</td></tr><tr><td>为什么其他人没有因为无聊… 而尖叫</td><td align="center">how come everybody else isn’t screaming with… with boredom too?</td></tr><tr><td>我…</td><td align="center">I…</td></tr><tr><td>尝试让自己感受到…</td><td align="center">Try to find ways of making myself feel something…</td></tr><tr><td>更多更多的东西 但是…</td><td align="center">More and more and more, but…</td></tr><tr><td>并没有任何改变</td><td align="center">It doesn’t make any difference.</td></tr><tr><td>不管我做什么 我没有…</td><td align="center">No matter what I do, I don’t feel…</td></tr><tr><td>任何感觉</td><td align="center">Anything</td></tr><tr><td>我…</td><td align="center">I…</td></tr><tr><td>我自残 却不会痛</td><td align="center">I hurt myself,doesn’t hurt.</td></tr><tr><td>买想要的东西 却不想要</td><td align="center">I buy what I want, I don’t want it.</td></tr><tr><td>做喜欢的事 却…</td><td align="center">I do what I like, I don’t…</td></tr><tr><td>并不喜欢</td><td align="center">I don’t like it</td></tr><tr><td>我太无聊了</td><td align="center">I’m hust so bored.</td></tr></tbody></table><blockquote><p>可当有那么一天，我发现有那么一件事，亦或是有那么一个人是我真的喜欢，也是我真的在意的。她走进了我的世界，带着闪耀但并不耀眼甚至有些柔和的光芒，我在那一瞬间感受到自己<del>耗着</del>活着的意义，就像是蛾子那样，只为扑火的那一刹那。</p></blockquote><blockquote><p>即使火真的没有在乎过蛾子的感觉，它的生活，蛾的意义。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+          <category> 鸡汤 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 情感 </tag>
+            
+            <tag> 自我介绍 </tag>
+            
+            <tag> 杂谈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第二章变量和简单数据类型</title>
+      <link href="/2021/07/18/%E7%AC%AC%E4%BA%8C%E7%AB%A0%E5%8F%98%E9%87%8F%E5%92%8C%E7%AE%80%E5%8D%95%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+      <url>/2021/07/18/%E7%AC%AC%E4%BA%8C%E7%AB%A0%E5%8F%98%E9%87%8F%E5%92%8C%E7%AE%80%E5%8D%95%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="变量和简单数据类型"><a href="#变量和简单数据类型" class="headerlink" title="变量和简单数据类型"></a>变量和简单数据类型</h1><h2 id="1-变量"><a href="#1-变量" class="headerlink" title="1. 变量"></a>1. 变量</h2><p>对第一章的 <strong>Hello_World.py</strong> 文件进行进一步修改，如下所示:</p><pre><code>message = &quot;Hello Python World!&quot;print(message)</code></pre><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/%E5%8F%98%E9%87%8F1_1.4p642mn8qhw0.png" alt="变量1_1" loading="lazy"></p><p>我们添加了一个名为 <em>message</em> 的变量，每个变量都有存储了一个值，此时 <em>message</em> 里的值为文本 <strong>“Hello Python World！”</strong>。<br>因此，在执行<code>print</code>命令时，打印出来的是 <em>message</em> 关联的值。</p><p>让我们再对 <strong>Hello_World.py</strong> 进行修改，如下所示：</p><pre><code>message = &quot;Hello Python World!&quot;print(message)message = &quot;Goodbye Java!&quot;print(message)</code></pre><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/%E5%8F%98%E9%87%8F1_2.iplwbdq6si8.png" alt="变量1_2" loading="lazy"></p><p>我们可以看到在一个程序中，可以随时修改变量的值，而 <strong>Python</strong> 将始终记录变量最新的值。</p><h3 id="1-1-变量的命名和使用"><a href="#1-1-变量的命名和使用" class="headerlink" title="1.1 变量的命名和使用"></a>1.1 变量的命名和使用</h3><p>变量的规则如下：</p><ol><li>变量名只能包含字母、数字和下划线。变量可以字母或下划线打头，但不能以数字打头。<br>示例：   message_1 ✅<br> 1_message ❎</li><li>变量名不能包含空格，但可以使用下划线分隔单词。<br>示例：   greeting_message ✅<br>greeting message ❎</li><li>Python关键字，用作特殊作用的单词和函数名不能用作变量名。</li><li>变量名应该简短又具有描述性。</li><li>小写字母l和大写字母O慎用，因为它们容易被看作1和0。</li></ol><h2 id="2-字符串"><a href="#2-字符串" class="headerlink" title="2. 字符串"></a>2. 字符串</h2><p>字符串就是一系列字符。在 <strong>Python</strong> 中，用 <code>&quot; &quot;</code> 括起来的都是字符串，其中引号可以是 <code>&#39; &#39;</code> 也可以是 <code>&quot; &quot;</code> 。</p><h3 id="2-1-使用方法修改字符串的大小写"><a href="#2-1-使用方法修改字符串的大小写" class="headerlink" title="2.1 使用方法修改字符串的大小写"></a>2.1 使用方法修改字符串的大小写</h3><p>对于字符串，可执行最简单的操作之一就是修改单词的大小写。如下所示：</p><pre><code>name = &quot;yuan hua a &quot;print(name.title())</code></pre><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/%E5%AD%97%E7%AC%A6%E4%B8%B22_1.785m78x8bjs0.png" alt="字符串2_1" loading="lazy"></p><p>在示例中，小写的字符串 “yuan hua a”存储到了变量 <em>name</em> 中，在 <em>print</em> 语句中，方法 <em>title（）</em> 出现在变量 <em>name</em>后。<em>方法</em> 是 <strong>Python</strong> 可对数据执行的操作。在 <em>name.title（）</em> 中， <em>name</em> 后面的 <code>.</code> 让 <strong>Python</strong> 对变量 <em>name</em> 执行方法 <em>title（）</em> 指定的操作。每个方法后面都跟着 <code>()</code> ，因为方法通常需要额外的信息来完成工作，而这额外的信息则是由 <code>()</code> 内提供的。</p><p><em>title（）</em> 是以将首字母大写的方式来显示每个单词。此外，还有其他几个很有用的大小写处理方法。</p><pre><code>name = &quot;yuan hua a &quot;print(name.upper()) #将单词的所有字母大写print(name.lower()) #将单词的所有字母小写</code></pre><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/%E5%AD%97%E7%AC%A6%E4%B8%B22_2.7bfoauvsgsk0.png" alt="字符串2_2" loading="lazy"></p><h3 id="2-2-合并（拼接）字符串"><a href="#2-2-合并（拼接）字符串" class="headerlink" title="2.2 合并（拼接）字符串"></a>2.2 合并（拼接）字符串</h3><p>当你将姓和名存储在不同变量中，等要显示姓名时再将他们合而为一：</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+          <category> 基础语法学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 学习 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python_Hello_World</title>
+      <link href="/2021/07/17/Python-Hello-World/"/>
+      <url>/2021/07/17/Python-Hello-World/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一章-起步"><a href="#第一章-起步" class="headerlink" title="第一章 起步"></a>第一章 起步</h1><h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>编程界认为刚接触一门新的语言时，如果使用它在屏幕上显示消息 <strong>Hello World!</strong> 的程序，将会给你带来好运。</p><p>使用Python来编写 <strong>Hello World</strong> 程序，只需要一行代码：</p><pre><code>print(&quot;Hello World!&quot;)</code></pre><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/HelloWorld.3fg394u5hka0.png" alt="HelloWorld" loading="lazy"></p><p>第一章作为软件语言环境安装学习的一部，篇幅仅限于此，相信大家基本上在学习Python语法的时候也不会从Linux等环境下学吧（在此自动忽略Mac用户），从下一张开始，我们就要开始认真学习Python的基础语法了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+          <category> 基础语法学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 学习 </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vscode配置Python运行环境</title>
       <link href="/2021/07/16/Vscode%E9%85%8D%E7%BD%AEPython%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83/"/>
       <url>/2021/07/16/Vscode%E9%85%8D%E7%BD%AEPython%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83/</url>
       
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>VScode是一个相当优秀的IDE，具备开源、跨平台、模块化、插件丰富、启动时间快、颜值高、可高度定制等等优秀的特质，不愧是微软爸爸的私生子。<br>Vscode虽然是一个文本编辑器，但是在安装不同的插件后，就可以有相当多的工程。<br>所以用VScode来编写Python，也是相当的好用的。<br>所以，今天我们就来讲讲，怎么在VScode上配置Python开发环境。</p><h1 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h1><p>首先，我们必须先下载好Python的安装包和VScode的安装包。<br>下载地址如下：<br><a href="https://www.python.org/downloads/">Python下载</a><br><a href="https://code.visualstudio.com/">VScode下载</a><br>大家选择适合自己的版本下载即可。</p><p>本文中所用的系统是win11预览版，选择版本为python3.9.6.</p><h1 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h1><h2 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h2><p>在安装过程中切记勾选添加环境变量</p><h3 id="安装第三方的包"><a href="#安装第三方的包" class="headerlink" title="安装第三方的包"></a>安装第三方的包</h3><pre><code>python #检查python版本import this #欣赏python之禅exit() #退出pip list #检查第三方的包pip install --user flake8 #下载安装flake8pip install --user yapf #下载安装yapf</code></pre><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/%E6%A3%80%E6%9F%A5%E9%85%8D%E7%BD%AE%E7%9A%84Python.70att70nipg0.png" alt="检查配置的Python" loading="lazy"></p><h2 id="安装Vscode"><a href="#安装Vscode" class="headerlink" title="安装Vscode"></a>安装Vscode</h2><p>从官网上下载好安装包后，一路NEXT就好了。<br>（所以我本章到底要讲啥呢，水了这么几个步骤，主要还是下面最关键咯）</p><h1 id="配置Vscode"><a href="#配置Vscode" class="headerlink" title="配置Vscode"></a>配置Vscode</h1><h2 id="安装python插件"><a href="#安装python插件" class="headerlink" title="安装python插件"></a>安装python插件</h2><ul><li>1.打开Vscode，按快捷键<code>Ctrl+Shift+X</code>，进入插件管理页面。</li><li>2.在搜索栏中输入python</li><li>3.选择插件，点击安装。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/Vscode%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6python.5y6xg4nirv40.png" alt="Vscode安装插件python" loading="lazy"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>基本上Vscode安装Python步骤到此就结束了，下一更开始将会开始Python语言的基础学习。</p><p>什么？你说我这篇博客啥都没写？的确啊，我就是在水，略略略🤷‍♂️</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>VScode是一个相当优秀的IDE，具备开源、跨平台、模块化、插件丰富、启动时间快、颜值高、可高度定制等等优秀的特质，不愧是微软爸爸的私生子。<br>Vscode虽然是一个文本编辑器，但是在安装不同的插件后，就可以有相当多的工程。<br>所以用VScode来编写Python，也是相当的好用的。<br>所以，今天我们就来讲讲，怎么在VScode上配置Python开发环境。</p><h1 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h1><p>首先，我们必须先下载好Python的安装包和VScode的安装包。<br>下载地址如下：<br><a href="https://www.python.org/downloads/">Python下载</a><br><a href="https://code.visualstudio.com/">VScode下载</a><br>大家选择适合自己的版本下载即可。</p><p>本文中所用的系统是win11预览版，选择版本为python3.9.6.</p><h1 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h1><h2 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h2><p>在安装过程中切记勾选添加环境变量</p><h3 id="安装第三方的包"><a href="#安装第三方的包" class="headerlink" title="安装第三方的包"></a>安装第三方的包</h3><pre><code>python #检查python版本import this #欣赏python之禅exit() #退出pip list #检查第三方的包pip install --user flake8 #下载安装flake8pip install --user yapf #下载安装yapf</code></pre><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/%E6%A3%80%E6%9F%A5%E9%85%8D%E7%BD%AE%E7%9A%84Python.70att70nipg0.png" alt="检查配置的Python" loading="lazy"></p><h2 id="安装Vscode"><a href="#安装Vscode" class="headerlink" title="安装Vscode"></a>安装Vscode</h2><p>从官网上下载好安装包后，一路NEXT就好了。<br>（所以我本章到底要讲啥呢，水了这么几个步骤，主要还是下面最关键咯）</p><h1 id="配置Vscode"><a href="#配置Vscode" class="headerlink" title="配置Vscode"></a>配置Vscode</h1><h2 id="安装python插件"><a href="#安装python插件" class="headerlink" title="安装python插件"></a>安装python插件</h2><ul><li>1.打开Vscode，按快捷键<code>Ctrl+Shift+X</code>，进入插件管理页面。</li><li>2.在搜索栏中输入python</li><li>3.选择插件，点击安装。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/Vscode%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6python.5y6xg4nirv40.png" alt="Vscode安装插件python" loading="lazy"></p><p>由于在基础学习中的语句较为简短，因此我选择创建<code>.ipynb</code>文件进行单元调试运行。</p><p><img src="https://cdn.jsdelivr.net/gh/yuanhuaa/images@master/images-cage/Vscode%E4%BD%BF%E7%94%A8JupterNotebook.2zyhldzgjgc0.png" alt="Vscode使用JupterNotebook" loading="lazy"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>基本上Vscode安装Python步骤到此就结束了，下一更开始将会开始Python语言的基础学习。</p><p>什么？你说我这篇博客啥都没写？<del>的确啊，我就是在水，略略略🤷‍♂️</del><br>学习嘛，当然要做好准备再由浅入深啦！</p>]]></content>
       
       
       <categories>
